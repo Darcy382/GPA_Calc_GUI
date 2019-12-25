@@ -26,7 +26,8 @@ def add_row():
 def calculate():
     courses = []
     for row in rows:
-        courses.append(Course(row[0].get(), row[1].get(), row[2].get()))
+        if row[0].get() and row[1].get() and row[2].get():
+            courses.append(Course(row[0].get(), row[1].get(), row[2].get()))
     total_gpa = 0
     total_credits = 0
     for course in courses:
