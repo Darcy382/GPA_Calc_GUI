@@ -13,7 +13,7 @@ gpa_scale = {
 class Course:
     def __init__(self, course_name, grade, credits):
         self.name = course_name
-        self.grade = grade1
+        self.grade = grade
         self.credits = float(credits)
 
     def gpa_value(self):
